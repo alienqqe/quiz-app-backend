@@ -14,9 +14,9 @@ const app = express()
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://euphonious-cocada-ac9319.netlify.app/',
+    'https://euphonious-cocada-ac9319.netlify.app',
   ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 }
 
