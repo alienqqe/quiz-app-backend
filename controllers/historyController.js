@@ -76,7 +76,7 @@ exports.deleteQuiz = async (req, res) => {
 
   try {
     const decoded = jwt.verify(token, REFRESH_SECRET)
-    const id = req.params
+    const { id } = req.params
 
     if (!id) {
       return res.status(400).json({ message: 'Quiz id is required' })
